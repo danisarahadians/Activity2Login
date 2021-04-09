@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstUI">
-        <activity android:name=".activity_daftar"></activity>
-        <activity android:name=".activity_daftarr" />
+        <activity android:name=".Lihatdata"
+            android:parentActivityName=".Home"></activity>
+        <activity android:name=".Home"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".activity_daftar"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".ActivityHasil"
             android:label="@string/label2"

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="mnDaftar" type="id">mnDaftar</item>
+    <item name="editRepass" type="id" />
+    <item name="fabSimpan" type="id" />
 </resources>

@@ -29,7 +29,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.236" />
+        app:layout_constraintVertical_bias="0.236"
+        android:autofillHints=""
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/edAlamat"
@@ -42,7 +44,9 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371" />
+        app:layout_constraintVertical_bias="0.371"
+        android:layout_width="match_parent"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/edPass"
@@ -54,18 +58,20 @@
         android:inputType="textPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="0dp"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/erepass"
+        android:hint="@string/editRepass"
         android:inputType="textPassword"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="91dp"
         tools:layout_editor_absoluteY="546dp"
-        tools:ignore="MissingConstraints" />
+        android:autofillHints="" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
@@ -75,7 +81,8 @@
         app:srcCompat="@drawable/sww"
         tools:layout_editor_absoluteX="303dp"
         tools:layout_editor_absoluteY="631dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:contentDescription="TODO" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -86,5 +93,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 </androidx.constraintlayout.widget.ConstraintLayout>

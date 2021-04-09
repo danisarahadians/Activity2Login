@@ -15,7 +15,7 @@ import android.widget.Toast;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
-public class FormPendaftaran extends AppCompatActivity {
+public class activity_daftar extends AppCompatActivity {
     EditText edtNama, edtAlamat, edtEmail, edtPassword, edtrepass;
     FloatingActionButton fab;
 
@@ -23,6 +23,12 @@ public class FormPendaftaran extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daftar);
+        edtNama = findViewById(R.id.edNama);
+        edtAlamat = findViewById(R.id.edAlamat);
+        edtEmail = findViewById(R.id.edEmail);
+        edtPassword = findViewById(R.id.edPass);
+        edtrepass = findViewById(R.id.editRepass);
+        fab = findViewById(R.id.fabSimpan);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
